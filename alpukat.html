@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpukat Buah Nikmat Kaya Manfaat</title>
+<style>
+    /* a. Seting background dan font halaman web */
+    body{
+        background-color: lightblue;
+        font-family:'Lucida Sans', Verdana, sans-serif;
+    }
+
+    /* b. Seting selector setiap paragraph dan heading 1 */
+    h1{
+        text-align: center;
+        color: blueviolet;
+    }
+    p{
+        text-align: justify;
+        width: fit-content;
+    }
+
+    /* c. Class "center": gambar berada di posisi tengah */
+    .center{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* d. Class "foto": background hitam, ukuran gambar 23% */
+    .foto{
+        background-color: black;
+    }
+    .foto img{
+        width: 23%;
+        vertical-align: top;
+    }
+
+    /* e. Class "cod" dan paragraph di dalamnya */
+    .cod {
+        margin: auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cod p {
+        background-color: aqua;
+        border: 1px dotted red;
+        text-align: center;
+        font-weight: bold;
+        color: blue;
+    }
+
+    /* f. Desain penawaran alpukat */
+    .penawaran{
+        max-width: 480px;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .penawaran .foto{
+        font-size: 0;            /* hilangkan celah antar gambar */
+        text-align: center;
+        padding: 4px 0;
+    }
+    .penawaran h2{
+        color: red;
+        font-size: 24px;
+        margin: 22px 0 18px;
+    }
+    .penawaran .harga{
+        color: red;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
+    }
+    .penawaran .harga s{
+        text-decoration: line-through;
+    }
+    .penawaran .harga .baru{
+        font-size: 24px;
+    }
+    .penawaran .cod p{
+        margin: 22px auto;
+        padding: 4px 6px;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        line-height: 1.25;
+    }
+    .penawaran button{
+        background-color: gold;
+        border: 1px solid #b8860b;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 3px 8px;
+        margin: 14px 0 20px;
+        cursor: pointer;
+    }
+    .penawaran button:hover{
+        background-color: orange;
+    }
+
+    /* b.1 Modifikasi text: highlight text yang diberi tebal */
+    .khasiat{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin: 30px 0;
+    }
+    .khasiat .awal{
+        background-color: #add8e6;
+        border: 1px solid #7aa7bd;
+        box-shadow: 0 0 0 4px #b7dceb;
+        padding: 6px 14px;
+        font-size: 14px;
+        max-width: 330px;
+    }
+    .khasiat .awal h3{ margin: 6px 0; }
+    .khasiat .awal ol{ margin: 6px 0; padding-left: 28px; }
+    .khasiat .panah{
+        font-size: 38px;
+        color: #2f6fb7;
+    }
+    .khasiat .hasil{
+        background-color: #8a7a2c;
+        color: white;
+        padding: 14px 20px;
+        font-size: 14px;
+        max-width: 480px;
+    }
+    .khasiat .hasil ol{ margin: 0; padding-left: 20px; }
+    .khasiat .hasil li{ margin: 8px 0; }
+    .khasiat .hasil b, .khasiat .hasil strong{
+        font-weight: bold;
+        background-color: yellow;     /* highlight teks tebal */
+        color: #4a3f00;
+        padding: 0 3px;
+        border-radius: 2px;
+        text-shadow: none;
+    }
+    .khasiat .hasil em{
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+    }
+
+    /* b.2 Table: setiap baris beda warna */
+    table.harga-alpukat{
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 640px;
+        font-size: 15px;
+    }
+    table.harga-alpukat th{
+        background-color: #5b9bd5;
+        color: white;
+        text-align: left;
+        padding: 6px 10px;
+    }
+    table.harga-alpukat td{
+        padding: 6px 10px;
+        border: 1px solid white;
+    }
+    table.harga-alpukat tbody tr:nth-child(odd) td{
+        background-color: #cfe0f4;
+    }
+    table.harga-alpukat tbody tr:nth-child(even) td{
+        background-color: #e9f0fa;
+    }
+    table.harga-alpukat td:first-child{
+        font-weight: bold;
+    }
+    h3.judul{ text-align: center; color: blueviolet; }
+</style>
+</head>
+<body>
+
+<!-- Halaman utama -->
+<h1>Alpukat Buah Nikmat Kaya Manfaat</h1>
+
+<img class="center" src="img/alpukat.jpg" alt="Buah alpukat">
+
+<p>Alpukat merupakan jenis buah yang memiliki kandungan lemak tinggi, sekitar 20 kali lebih tinggi dibanding buah-buahan lain. Nama latin tanaman alpukat adalah Persea americana, diyakini berasal dari Amerika Tengah. Buah ini dikenalkan ke Indonesia oleh Hindia Belanda sekitar tahun 1920-1930. Belanda saat itu membawa alpukat ke Indonesia untuk memenuhi kebutuhan lemak masyarakat yang tinggal di pegunungan.</p>
+
+<!-- Gambar 2 memakai class center juga -->
+<img class="center" src="img/alpukat2.jpg" alt="Alpukat dibelah">
+
+<!-- f. Desain penawaran -->
+<div class="penawaran">
+    <div class="foto">
+        <img src="img/alpukat1.jpg" alt="Alpukat 1"><img src="img/alpukat2.jpg" alt="Alpukat 2"><img src="img/alpukat3.jpg" alt="Alpukat 3"><img src="img/alpukat4.jpg" alt="Alpukat 4">
+    </div>
+
+    <h2>Anda ingin Buah Alpukat?,<br>Penawaran Khusus Bagi Anda</h2>
+
+    <p class="harga">
+        Harga 1 Kg <s>Rp. 35.000</s><br>
+        Nah sekarang <span class="baru">Rp. 25.000</span> saja<br>
+        Gimana? Tertarik !
+    </p>
+
+    <div class="cod">
+        <p>PEMBAYARAN DI TEMPAT / COD<br>
+           hanya untuk Jakarta, Bekasi dan Depok<br>
+           POTONGAN ONGKIR Rp.5.000,-<br>
+           UNTUK PEMBELIAN VIA TRANSFER</p>
+    </div>
+
+    <button type="button">PESAN SEKARANG</button>
+</div>
+
+<!-- b. Modifikasi halaman web -->
+<div class="khasiat">
+    <div class="awal">
+        <h3>Berikut khasiat buah Alpukat:</h3>
+        <ol>
+            <li>Vitamin E, Memiliki anti aging yang bisa mendorong perawatan kulit alamai</li>
+            <li>Vitamin K, Membantu mencegah terjadinya osteoporosis</li>
+            <li>Viitamin B5, Membantu menurunkan tingkat stress, meringankan rasa sakit</li>
+            <li>Vitamin B6, Membantu treat diabetes, pendarahan menstruasi, insomnia</li>
+        </ol>
+    </div>
+    <div class="panah">&#10132;</div>
+    <div class="hasil">
+        <ol>
+            <li><b>Vitamin E</b> &ndash; Memiliki <strong><em>anti aging</em></strong> yang bisa mendorong perawatan kulit alami</li>
+            <li><b>Vitamin K</b> &ndash; Membantu <strong>mencegah</strong> terjadinya <em>osteoporosis</em></li>
+            <li><b>Vitamin B5</b> &ndash; Membantu <strong>menurunkan</strong> tingkat stress, meringankan rasa sakit</li>
+            <li><b>Vitamin B6</b> &ndash; Membantu <strong><em>treat diabetes</em></strong>, pendarahan menstruasi, insomnia</li>
+        </ol>
+    </div>
+</div>
+
+<!-- b.2 Tabel -->
+<h3 class="judul">Daftar Harga Alpukat</h3>
+<table class="harga-alpukat">
+    <thead>
+        <tr><th>No</th><th>Jenis Alpukat</th><th>Harga 1 Kg</th><th>Harga 2Kg</th><th>Harga 3Kg</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>Alpukat Mentega</td><td>Rp. 35.000, -</td><td>Rp. 65.000, -</td><td>Rp. 90.000, -</td></tr>
+        <tr><td>2</td><td>Alpukat Miki</td><td>Rp. 50.000, -</td><td>Rp. 90.000, -</td><td>Rp. 135.000, -</td></tr>
+        <tr><td>3</td><td>Alpukat Aligator</td><td>Rp. 30.000, -</td><td>Rp. 55.000, -</td><td>Rp. 80.000, -</td></tr>
+        <tr><td>4</td><td>Alpukat Kendil</td><td>Rp. 40.000, -</td><td>Rp. 75.000, -</td><td>Rp. 100.000, -</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* css/styleku.css - CSS eksternal untuk burung.html */
+
+body{
+    margin: 0;
+    padding: 10px;
+    background-color: #f5f5dc;          /* beige */
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #000;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 6px;
+    background-color: #f5f5dc;
+    border: 1px solid #e6e6b8;
+}
+
+/* Header */
+header{
+    background-color: #deb887;          /* burlywood */
+    padding: 12px 14px 14px;
+}
+header h1{
+    margin: 8px 0 14px;
+    text-align: center;
+    color: blue;
+    font-size: 24px;
+}
+header blockquote{
+    margin: 0;
+    padding: 4px 8px;
+    background-color: gold;
+    border: 1px dotted #555;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Navigasi */
+nav{
+    text-align: center;
+    margin: 18px 0 14px;
+    font-size: 13px;
+}
+nav a{
+    color: #1a0dab;
+}
+nav a:visited{
+    color: #551a8b;
+}
+
+/* Gambar */
+.foto{
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 18px;
+}
+.foto img{
+    height: 135px;
+    width: auto;
+    margin: 0 2px;
+    border-radius: 3px;
+    vertical-align: top;
+}
+
+/* Isi */
+p{
+    text-align: justify;
+    margin: 0 0 12px;
+}
+/* Huruf pertama besar (drop cap) */
+p.pembuka::first-letter{
+    font-size: 48px;
+    color: blue;
+    float: left;
+    line-height: 0.9;
+    margin: 4px 4px 0 0;
+}
+h3{
+    margin: 18px 0 8px;
+    font-size: 15px;
+}
+section{
+    margin-bottom: 14px;
+}
+footer{
+    margin-top: 20px;
+    padding-top: 8px;
+    border-top: 1px solid #deb887;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Tampilan layar kecil (mis. iPhone 12/13) */
+@media (max-width: 480px){
+    header h1{ font-size: 21px; }
+    .foto img{ height: 110px; }
+}
